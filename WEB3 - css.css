@@ -1,0 +1,1085 @@
+* {
+    text-decoration: none;
+}
+
+a {
+    color: black
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.bodyberita {
+    background-color:coral;
+}
+.bodyprofil {
+    background-color: #41A67E;
+}
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    z-index: 1000;
+}
+header h1 {
+    text-align: center;
+}
+.logo {
+    width: 90px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+.logo-tautan {
+    height: 20px;
+    width: 20px;
+}
+
+nav {
+    margin-left: auto;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+    border-radius: 10px;
+}
+nav ul li:hover {
+    background-color: #1b232c;
+}
+nav ul li a {
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    display: block;
+}
+nav ul li a:hover {
+    background: #1a222b;
+    border-radius: 5px;
+}
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: #26323f;
+    list-style: none;
+    padding: 0;
+    margin:0;
+    border-radius: 5px;
+    z-index: 1000
+}
+nav ul li ul li {
+    margin: 0px;
+    width: 150px;
+    text-align: center;
+}
+nav ul li ul li a {
+    padding: 10px;
+    font-weight: normal;
+}
+nav ul li:hover ul {
+    display: block; /*flex untuk ke samping*/
+}
+.beranda {
+    color: aqua;
+}
+
+main section article h3 {
+    box-shadow: 0px 0px 10px black;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-width: 50px;
+}
+main section article p {
+    box-shadow: 0px 0px 10px black;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.anoborder {
+    box-shadow: none;
+    background-color: none;
+}
+
+
+
+
+
+
+
+/*Index css */
+
+
+
+
+
+
+
+
+
+main {
+    display: flex;
+    padding: 20px;
+    height: 250px;
+    border: none;
+    background-color: rgb(116, 116, 228);
+}
+main section {
+    margin: 20px;
+    flex:3px;
+    border:none;
+    padding: 20px;
+
+}
+.section1 {
+    border:none;
+}
+.banner {
+    background-image: url(Photos/sma.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+.bannertext {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: auto auto;
+    padding-top: 180px;
+    text-shadow: 0 0 8px rgb(0, 0, 0);
+    animation: MoveEffect 2s ease;
+    transition: 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0);
+    width: 40%;
+}
+
+@keyframes MoveEffect {
+                0% {
+                opacity: 0;
+                transform:translateY(40px);
+                color: white;
+            }
+            75%{
+                opacity : 1;
+                transform:translateY(0);
+                color: yellow;
+            }
+            100%{
+                color:rgb(255, 255, 255);
+            }
+        }
+.bannertext:hover {
+    color: gold;
+    transform: scale(1.2);
+
+
+}
+.maintesting {
+    background-color: blue;
+    border: 2px solid darkblue;
+    display: flex;
+    padding: 20px;
+    height: 250px;
+    border: none;
+    background-image: url(Photos/Background\ KepSek.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 440px;
+}
+.kepsekimage {
+    border-radius: 10px;
+    background-color: aqua;
+    height: 300px;
+    width: 375px;
+    box-shadow: 0 0 10px black;
+    transition: all 0.2s linear;
+}
+.kepsekimage:hover {
+    transform:scale(1.05);
+    box-shadow: 0 0 30px yellow;
+}
+.kepsekarea {
+    text-align: center;
+    height: 340px;
+    display: block;
+    line-height: 10px;
+    font-weight: bold;
+}
+
+.kepsektext {
+    padding: 20px;
+    text-align: justify;
+}
+
+
+.article{
+    border: none;
+    background-image: url(Photos/sma.jpg);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    font-size:12px;
+    background-color: rgb(16, 61, 46);
+    border-radius: 10px;
+    margin:5px;
+    padding: 5px;
+    box-shadow: 10px 10px rgb(18, 44, 35);
+    margin-bottom:15px;
+    min-height: 120px;
+    
+}
+.article1 {
+    background-image: url(Photos/London\ far\ clock.jpg);
+    color: white;
+}
+
+aside{
+    color: white;
+    background-color: rgb(141, 41, 5);
+    padding: 20px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 20px;
+    line-height: 16px;
+}
+
+footer {
+    background-color: #2c3e50;
+    padding:20px;
+    color:white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* Profil */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sejarah Sekolah */
+
+
+
+
+
+
+
+
+
+
+
+.mainsejarah {
+    background-color: white;
+    border: 5px solid grey;
+    border-radius: 20px;
+    width:80%;
+    height: 620px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    padding: 20px;
+}
+.sectionsejarahkiri{
+    text-align: center;
+    height: 340px;
+    display: block;
+    line-height: 10px;
+    font-weight: bold;
+}
+.oldsman3 {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+.sectionsejarahkanan {
+    width: 600px;
+    text-align: justify;
+}
+.mainprofil {
+    height: 480px;
+}
+.nowsman3 {
+    margin-top: 50px;
+    width:400px;
+    height:300px
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Guru & Staff */
+
+
+
+
+
+
+
+.divisiontest {
+    border: 5px solid blue;
+    background-color: aqua;
+    display: block;
+}
+.maintest {
+    border: 5px solid #05339C;
+    background-color: #1055C9;
+    margin: 10px auto;
+    display: block;
+    min-height: 1000px;
+    margin: auto;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    
+}
+.sectiontest {
+    border: 5px solid #857333;
+    background-color: #E5C95F;
+    display:flex;
+    height: 300px;
+    padding: 20px;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+.articletest {
+    border: 5px solid darkgreen;
+    background-color: green;
+    margin:10px auto;
+    text-align: center;
+    position: relative;
+    width: 18%;
+    border-radius: 10px;
+    line-height: 20px;
+    box-shadow: 0 0 10px black;
+    color:black;
+    overflow: hidden;
+}
+.imagetest {
+    height: 120px;
+    width: 120px;
+    margin:10px auto;
+    border-radius: 50%;
+}
+main div section article p {
+    font-weight: bold;
+    background-color: white;
+    box-shadow: none;
+}
+
+.fisika {
+    background-color: red;
+    border: 5px solid maroon;
+    transition: all 0.2s linear;
+}
+.fisika:hover {
+    background-color: rgb(255, 83, 83);
+    border: 5px solid rgb(255, 0, 0);
+    box-shadow: 0 0 30px yellow;
+    transform: scale(1.025);
+}
+.kimia {
+    background-color: yellow;
+    border: 5px solid rgb(90, 128, 0);
+    transition: all 0.2s linear;
+}
+.kimia:hover {
+    background-color: rgb(255, 247, 132);
+    border: 5px solid rgb(200, 255, 0);
+    box-shadow: 0 0 30px yellow;
+    transform: scale(1.025);
+}
+.matlan {
+    background-color: rgb(0, 160, 160);
+    border: 5px solid rgb(0, 61, 77);
+    transition: all 0.2s linear;
+}
+.matlan:hover {
+    background-color: rgb(0, 255, 255);
+    border: 5px solid rgb(0, 120, 150);
+    box-shadow: 0 0 30px yellow;
+    transform: scale(1.025);
+}
+.meow {
+    background-color: rgba(200, 255, 0, 1);
+    border: 5px solid rgb(79, 105, 13);
+    transition: all 0.2s linear;
+}
+.meow:hover {
+    background-color: rgb(225, 255, 115);
+    border: 5px solid rgb(158, 221, 0);
+    box-shadow: 0 0 30px yellow;
+    transform: scale(1.025);
+}
+.neraka {
+    background-color: rgba(53, 0, 0, 1);
+    border: 5px solid rgb(85, 0, 0);
+    transition: all 0.2s linear;
+}
+.neraka:hover {
+    background-color: rgb(0, 0, 0);
+    border: 5px solid rgb(51, 6, 6);
+    box-shadow: 0 0 30px rgb(46, 4, 4);
+    
+}
+.basket {
+    background-color: rgba(255, 68, 0, 1);
+    border: 5px solid rgb(82, 19, 0);
+    transition: all 0.2s linear;
+}
+.basket:hover {
+    background-color: rgb(255, 129, 83);
+    border: 5px solid rgb(255, 60, 0);
+    box-shadow: 0 0 30px yellow;
+    transform: scale(1.025);
+}
+.unknown {
+    background-color: rgba(49, 46, 45, 1);
+    border: 5px solid rgb(0, 0, 0);
+    transition: all 0.2s linear;
+}
+.unknown:hover{
+    background-color: rgb(94, 89, 88);
+    border: 5px solid rgb(44, 44, 44);
+    box-shadow: 0 0 30px rgb(179, 179, 179);
+    transform: scale(1.025);
+}
+.informatika {
+    background-color: rgba(0, 255, 64, 1);
+    border: 5px solid rgb(0, 80, 11);
+    transition: all 0.2s linear;
+}
+.informatika:hover {
+    background-color: rgb(97, 255, 136);
+    border: 5px solid rgb(0, 255, 34);
+    box-shadow: 0 0 30px yellow;
+    transform: scale(1.025);
+}
+.teriak {
+    background-color: rgba(247, 0, 255, 1);
+    border: 5px solid rgb(70, 0, 64);
+    transition: all 0.2s linear;
+}
+.teriak:hover {
+    background-color: rgb(250, 107, 255);
+    border: 5px solid rgb(255, 0, 234);
+    box-shadow: 0 0 30px yellow;
+    transform: scale(1.025);
+}
+.racun {
+    background-color: rgba(0, 68, 15, 1);
+    border: 5px solid rgb(0, 34, 10);
+    transition: all 0.2s linear;
+}
+.racun:hover {
+    background-color: rgb(0, 43, 9);
+    border: 5px solid rgb(0, 0, 0);
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    
+}
+.articletest:after {
+    content: "";
+    position: absolute;
+    inset:0;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1) 37%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+}
+.articletest * {
+    position: relative;
+    z-index: 2;
+}
+.title-daftar {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* Berita */
+
+
+
+
+
+
+
+
+
+
+
+.mainberitalalu {
+    height: auto;
+    background-color: rgb(0, 255, 170);
+    display: flex;
+    border: 5px solid rgb(18, 131, 125);
+    border-radius: 20px;
+    margin: auto;
+    width: 90%;
+}
+
+.h1beritalalu {
+    text-align: center;
+    background-color: rgb(0, 255, 170);
+    border: 5px solid rgb(18, 131, 125);
+    padding: 0;
+    width: 30%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.sectionberita {
+    background-color: rgb(0, 181, 226);
+    border: 5px solid rgb(37, 116, 126);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    transition: all 0.5s linear;
+}
+.sectionberita:hover {
+    background-color: rgb(74, 219, 255);
+    border: 5px solid rgb(21, 142, 158);
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgb(233, 236, 4);
+    transform: scale(1.05);
+}
+.artikelberita {
+    border: none;
+    background-size: cover;
+    color: white;
+    font-size:12px;
+    background-color: rgb(16, 61, 46);
+    border-radius: 10px;
+    margin:5px;
+    padding: 5px;
+    box-shadow: 10px 10px rgb(18, 44, 35);
+    margin-bottom:15px;
+    min-height: 120px;
+}
+.beritasatu {
+    background-image: url(Photos/London\ Far\ Cold.jpg);
+    color: white;
+}
+.beritadua {
+    background-image: url(Photos/London\ Castle.jpg);
+    color: white;
+}
+.beritatiga {
+    background-image: url(Photos/London\ far\ clock.jpg);
+    color: rgb(255, 255, 255);
+}
+.h1beritadepan {
+    text-align: center;
+    background-color: rgb(0, 255, 34);
+    border: 5px solid rgb(22, 131, 18);
+    width: 30%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.mainberitadepan {
+    height: auto;
+    background-color: rgb(0, 255, 34);
+    border: 5px solid rgb(22, 131, 18);
+    display: flex;
+    border-radius: 20px;
+    margin: auto;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.sectionberita1 {
+    background-color: rgb(136, 255, 0);
+    border: 5px solid rgb(95, 128, 34);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    transition: all 0.5s linear;
+}
+.sectionberita1:hover {
+    background-color: rgb(179, 255, 92);
+    border: 5px solid rgb(111, 170, 0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgb(233, 236, 4);
+    transform: scale(1.05);
+}
+.beritaempat {
+    background-image: url(Photos/London\ Far\ Cold.jpg);
+    color: white;
+}
+.beritalima {
+    background-image: url(Photos/London\ Castle.jpg);
+    color: white;
+}
+.beritaenam {
+    background-image: url(Photos/London\ far\ clock.jpg);
+    color: rgb(255, 255, 255);
+}
+
+.h1ak1 {
+    background-color: gold;
+    border: 5px solid goldenrod
+}
+.mainak1 {
+    background-color: yellow;
+    border: 5px solid yellowgreen
+}
+.sectionak1 {
+    background-color: rgb(255, 145, 0);
+    border: 5px solid rgb(255, 0, 0);
+}
+.sectionak1:hover {
+    background-color: rgb(255, 208, 0);
+    border: 5px solid rgb(255, 153, 0);
+    box-shadow: 0 0 30px red;
+}
+.artikelak11 {
+    background-image: url(Photos/London\ Far\ Cold.jpg);
+    color: white;
+}
+.artikelak12 {
+    background-image: url(Photos/London\ Castle.jpg);
+    color: white;
+}
+.artikelak13 {
+    background-image: url(Photos/London\ far\ clock.jpg);
+    color: rgb(255, 255, 255);
+}
+
+.h1ak2 {
+    background-color: rgb(165, 165, 165);
+    border: 5px solid rgb(70, 70, 70);
+}
+
+.mainak2 {
+    background-color: silver;
+    border: 5px solid rgb(92, 92, 92)
+}
+.sectionak2 {
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(0, 0, 0);
+    color: black;
+}
+.sectionak2:hover {
+    background-color: rgb(187, 187, 187);
+    border: 5px solid rgb(99, 99, 99);
+    box-shadow: 0 0 30px rgb(255, 255, 255);
+    color: white;
+}
+.artikelak21 {
+    background-image: url(Photos/London\ Far\ Cold.jpg);
+    color: white;
+}
+.artikelak22 {
+    background-image: url(Photos/London\ Castle.jpg);
+    color: white;
+}
+.artikelak23 {
+    background-image: url(Photos/London\ far\ clock.jpg);
+    color: rgb(255, 255, 255);
+}
+
+
+
+.h1non1 {
+    background-color: rgb(255, 0, 0);
+    border: 5px solid rgb(122, 0, 0);
+    width: 40%;
+}
+.mainnon1 {
+    background-color: rgb(255, 0, 140);
+    border: 5px solid rgb(253, 0, 0)
+}
+.sectionnon1 {
+    background-color: rgb(174, 0, 255);
+    border: 5px solid rgb(78, 0, 122);
+}
+.sectionnon1:hover {
+    background-color: rgb(124, 42, 255);
+    border: 5px solid rgb(101, 0, 196);
+    box-shadow: 0 0 30px rgb(255, 0, 242);
+}
+.artikelnon11 {
+    background-image: url(Photos/London\ Far\ Cold.jpg);
+    color: white;
+}
+.artikelnon12 {
+    background-image: url(Photos/London\ Castle.jpg);
+    color: white;
+}
+.artikelnon13 {
+    background-image: url(Photos/London\ far\ clock.jpg);
+    color: rgb(255, 255, 255);
+}
+
+.h1non2 {
+    background-color: rgb(0, 89, 255);
+    border: 5px solid rgb(0, 8, 124);
+    width: 40%;
+}
+
+.mainnon2 {
+    background-color: rgb(4, 0, 255);
+    border: 5px solid rgb(2, 0, 131)
+}
+.sectionnon2 {
+    background-color: rgb(0, 204, 255);
+    border: 5px solid rgb(0, 80, 112);
+}
+.sectionnon2:hover {
+    background-color: rgb(98, 245, 255);
+    border: 5px solid rgb(0, 119, 255);
+    box-shadow: 0 0 30px rgb(117, 58, 255);
+}
+.artikelnon21 {
+    background-image: url(Photos/London\ Far\ Cold.jpg);
+    color: white;
+}
+.artikelnon22 {
+    background-image: url(Photos/London\ Castle.jpg);
+    color: white;
+}
+.artikelnon23 {
+    background-image: url(Photos/London\ far\ clock.jpg);
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+.h1pres1 {
+    background-color: rgb(0, 255, 149);
+    border: 5px solid rgb(0, 122, 81);
+    width: 40%;
+}
+.mainpres1 {
+    background-color: rgb(0, 255, 170);
+    border: 5px solid rgb(0, 136, 79)
+}
+.sectionpres1 {
+    background-color: rgb(0, 255, 34);
+    border: 5px solid rgb(0, 136, 129);
+}
+.sectionpres1:hover {
+    background-color: rgb(42, 230, 255);
+    border: 5px solid rgb(43, 255, 0);
+    box-shadow: 0 0 30px rgb(17, 0, 255);
+}
+.artikelpres11 {
+    background-image: url(Photos/London\ Far\ Cold.jpg);
+    color: white;
+}
+.artikelpres12 {
+    background-image: url(Photos/London\ Castle.jpg);
+    color: white;
+}
+.artikelpres13 {
+    background-image: url(Photos/London\ far\ clock.jpg);
+    color: rgb(255, 255, 255);
+}
+
+.h1pres2 {
+    background-color: rgb(255, 123, 0);
+    border: 5px solid rgb(124, 70, 0);
+    width: 40%;
+}
+
+.mainpres2 {
+    background-color: rgb(255, 136, 0);
+    border: 5px solid rgb(131, 63, 0)
+}
+.sectionpres2 {
+    background-color: rgb(251, 255, 0);
+    border: 5px solid rgb(101, 112, 0);
+}
+.sectionpres2:hover {
+    background-color: rgb(98, 108, 255);
+    border: 5px solid rgb(4, 0, 255);
+    box-shadow: 0 0 30px rgb(255, 242, 58);
+}
+.artikelpres21 {
+    background-image: url(Photos/London\ Far\ Cold.jpg);
+    color: white;
+}
+.artikelpres22 {
+    background-image: url(Photos/London\ Castle.jpg);
+    color: white;
+}
+.artikelpres23 {
+    background-image: url(Photos/London\ far\ clock.jpg);
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+/* Berita Akademik */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Form Kontak */
+
+
+
+
+
+
+
+
+.bodykontak {
+    background-color: crimson;
+    padding: 0;
+    height: 300px;
+}
+.formkontak {
+    background-color: white;
+    margin: auto auto;
+    border-radius: 10px;
+    border: 3px solid red;
+    width:400px;
+    box-shadow: 0 0 10px black;
+}
+.h1formkontak {
+    text-align: center;
+    background-color: red;
+    border: 5px solid rgb(151, 7, 36);
+    border-radius: 20px;
+    width: 20%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.formbutton {
+    background-color: rgb(231, 231, 231);
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: auto;
+    transition: all 0.1s linear;
+}
+.formbutton:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(231, 231, 231);
+    box-shadow: 0 0 10px yellow;
+    transform: scale(1.1)
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Visi & Misi*/
+
+
+
+
+
+
+
+
+
+.mainvisimisi{
+    background-color: rgb(255, 0, 212);
+    border: 5px solid rgb(112, 0, 112);
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 70%;
+    padding: 30px;
+    display:block;
+    height: 1950px;
+}
+.mainvisih1 {
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(215, 255, 37);
+    border: 4px solid yellowgreen;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    
+}
+.mainmisih1 {
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(37, 255, 219);
+    border: 4px solid rgb(59, 201, 201);
+    color: black;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0 0 10px black;
+}
+.sectionvisi {
+    background-color: rgb(248, 255, 143);
+    color: black;
+    border: 5px solid yellow;
+    border-radius: 10px;
+    width: 60%;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0 0 10px black;
+}
+.sectionmisi {
+    background-color: rgb(182, 238, 255);
+    color: black;
+    border: 5px solid rgb(0, 225, 255);
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 60px;
+    box-shadow: 0 0 10px black;
+}
+.sectionkebijakanmutu {
+    background-color: rgb(167, 255, 171);
+    color: black;
+    border: 5px solid rgb(0, 255, 0);
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 60px;
+    box-shadow: 0 0 10px black;
+}
+.kebijakanmutuh1 {
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(37, 255, 73);
+    border: 4px solid rgb(59, 201, 71);
+    color: black;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0 0 10px black;
+}
+main section ul li {
+    list-style: number;
+}
+.sectionkompetensi {
+    background-color: rgb(255, 167, 167);
+    color: black;
+    border: 5px solid rgb(255, 0, 0);
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 60px;
+    box-shadow: 0 0 10px black;
+}
+.kompetensih1 {
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(255, 37, 37);
+    border: 4px solid rgb(201, 59, 59);
+    color: black;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0 0 10px black;
+}
+.sectionprogramSP {
+    background-color: rgb(215, 167, 255);
+    color: black;
+    border: 5px solid rgb(132, 0, 255);
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 60px;
+    box-shadow: 0 0 10px black;
+}
+.programSPh1 {
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    background-color: rgb(157, 37, 255);
+    border: 4px solid rgb(156, 59, 201);
+    color: black;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0 0 10px black;
+}
